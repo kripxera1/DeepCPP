@@ -58,8 +58,8 @@ The `/examples` folder contains several projects that demonstrate the usage of D
 
 - **MNIST Classifier**: A fully connected network trained to classify handwritten digits from the MNIST dataset.
 - **MNIST Denoising VAE**: A Variational Autoencoder trained to denoise images from the MNIST dataset.
-![MNIST Image + Normal Noise](link-to-noisy)
-![Denoised MNIST Image using VAE](link-to-denoised)
+![MNIST Image + Normal Noise](https://github.com/kripxera1/DeepCPP/blob/main/noisy.jpg)
+![Denoised MNIST Image using VAE](https://github.com/kripxera1/DeepCPP/blob/main/denoised.jpg)
 - **MNIST VAE**: A Variational Autoencoder trained to generate images resembling the MNIST dataset.
 
 ## Contributing & License
@@ -72,4 +72,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Antonio Manuel Escudero Vargas - antoniomanuelescuderovargas@gmail.com
 
-Project Link: [https://github.com/kripxera1/DeepCPP.git](https://github.com/your-username/DeepCPP)
+Project Link: [https://github.com/kripxera1/DeepCPP](https://github.com/your-username/DeepCPP)
