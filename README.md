@@ -6,14 +6,14 @@ DeepCPP is a comprehensive Neural Network Framework implemented entirely from sc
 
 1. [About the Project](#about-the-project)
 2. [Features](#features)
-3. [Prerequisites & Installation](#prerequisites--installation)
-4. [Example Projects](#usage--example-projects)
+3. [Prerequisites & Installation](#prerequisites)
+4. [Example Projects](#example-projects)
 5. [Contributing & License](#contributing--license)
 6. [Contact](#contact)
 
 ## About The Project
 
-DeepCPP was built with the aim of providing a deeper understanding of the inner workings of neural networks. By coding all the elements from scratch, we have gained a detailed comprehension of the many intricacies of these powerful tools.
+DeepCPP was built with the aim of providing a deeper understanding of the inner workings of neural networks. By coding all the elements from scratch, I have gained a detailed comprehension of the many intricacies of these powerful tools.
 
 ## Features
 
@@ -57,10 +57,11 @@ The generated data will be stored in the `/images` folder.
 The `/examples` folder contains several projects that demonstrate the usage of DeepCPP. These include:
 
 - **MNIST Classifier**: A fully connected network trained to classify handwritten digits from the MNIST dataset.
+- **MNIST VAE**: A Variational Autoencoder trained to generate images resembling the MNIST dataset.
 - **MNIST Denoising VAE**: A Variational Autoencoder trained to denoise images from the MNIST dataset.
+
 ![MNIST Image + Normal Noise](https://github.com/kripxera1/DeepCPP/blob/main/noisy.jpg)
 ![Denoised MNIST Image using VAE](https://github.com/kripxera1/DeepCPP/blob/main/denoised.jpg)
-- **MNIST VAE**: A Variational Autoencoder trained to generate images resembling the MNIST dataset.
 
 ## Contributing & License
 
@@ -72,4 +73,4 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Antonio Manuel Escudero Vargas - antoniomanuelescuderovargas@gmail.com
 
-Project Link: [https://github.com/kripxera1/DeepCPP](https://github.com/your-username/DeepCPP)
+Project Link: [https://github.com/kripxera1/DeepCPP](https://github.com/kripxera1/DeepCPP)
