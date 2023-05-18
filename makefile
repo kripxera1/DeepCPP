@@ -31,12 +31,12 @@ $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 $(OBJ_DIR)/%.o: $(EXAMPLE_DIR)/%.cpp
 	$(CC) $(CFLAGS) $(CPP_VERSION) -o $@ $<
 
-.PHONY: clean cleanum_images mrproper
+.PHONY: clean cleanimages mrproper
 
 clean:
 	-rm $(BIN_DIR)/*
 
-cleanum_images:
+cleanimages:
 	-rm $(IMG_DIR)/vae/* $(IMG_DIR)/denoising-vae/* $(IMG_DIR)/classifier/*
 
 mrproper: clean
