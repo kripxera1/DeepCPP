@@ -90,12 +90,12 @@ int main(){
     cout << "\n\nLoading test dataset... " << flush;
 
     auto test_data = loadData(test_dataPath.c_str());
-    int testSize = test_data.size();
-    int nBatchTest = testSize/batch_size;
+    int test_size = test_data.size();
+    int num_batch_test = test_size/batch_size;
 
     cout << "\tDone!"
          << "\n\nNumber of test examples: "
-         << testSize << endl;
+         << test_size << endl;
 
 
     // Training
@@ -131,14 +131,14 @@ int main(){
         }
 
         //Testing
-        for(int it = 0; it < nBatchTest; it++){
+        for(int it = 0; it < num_batch_test; it++){
             // Load batch
             loadBatch(test_data,batch_size,it,X,Y);
             // Pass forward
             Y_hat = nn.forward(X);
             // Accuracy and loss update
-            test_accuracy += getAccuracy(Y_hat,Y)/nBatchTest;
-            test_loss += nn.loss->compute(Y_hat,Y)/nBatchTest;
+            test_accuracy += getAccuracy(Y_hat,Y)/num_batch_test;
+            test_loss += nn.loss->compute(Y_hat,Y)/num_batch_test;
         }
 
         cout << setprecision(4) << fixed  
@@ -156,19 +156,19 @@ int main(){
     /////////////////////////////////////////////////////////////////////////
 
     // number of images to classify
-    int nImages = 20;
+    int num_images = 20;
     int height = 28;
     int width  = 28;
     int index = 0;
 
-    loadBatch(test_data,nImages,index,X,Y);
+    loadBatch(test_data,num_images,index,X,Y);
 
     //Pass forward
 
     Y_hat = nn.forward(X);
     auto prediction = getPrediction(Y_hat);
     
-    for(int images = 0; images < nImages; images++){
+    for(int images = 0; images < num_images; images++){
         saveImageSamples(X,height,width,images,images+1,
                          to_string(prediction[images]),images_path);
     }
