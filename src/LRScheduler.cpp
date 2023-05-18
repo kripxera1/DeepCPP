@@ -8,6 +8,7 @@
 
 #include "LRScheduler.h"
 #include <cmath>
+#include <algorithm>
 
 ConstantLearningRate::ConstantLearningRate(double learning_rate) 
     : learning_rate(learning_rate) {}

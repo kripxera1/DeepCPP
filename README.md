@@ -33,7 +33,7 @@ This framework includes:
 
 To run this project, you will need:
 
-- A C++ compiler that supports C++17 (gcc, clang, etc.)
+- A C++ compiler that supports C++11 (gcc, clang, etc.)
 - OpenMP library for multi-threading.
 - Basic knowledge of C++ and neural networks
 

@@ -7,7 +7,7 @@ BIN_DIR = bin
 SRC_DIR = src
 EXAMPLE_DIR = examples
 IMG_DIR = images
-CPP_VERSION = -std=c++17
+CPP_VERSION = -std=c++11
 
 OBJS = $(OBJ_DIR)/bitmap.o $(OBJ_DIR)/algebra.o $(OBJ_DIR)/NNUtils.o \
        $(OBJ_DIR)/losses.o $(OBJ_DIR)/layers.o $(OBJ_DIR)/optimizers.o \
