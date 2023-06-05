@@ -7,8 +7,6 @@
 
 #include "algebra.h"
 #include <iostream>
-#include <omp.h>
-
 
 
 Matrix dot(const Matrix& a, const Matrix& b) {
