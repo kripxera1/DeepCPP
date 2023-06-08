@@ -24,7 +24,7 @@
  * @param mat Matrix # Input matrix.
  * @return double
  */
-double sumMatrix (const Matrix &mat) {
+double DeepCPP::IMGProcessing::sumMatrix (const Matrix &mat) {
     static double acum = 0.0f;
     std::for_each(mat.begin(), mat.end(), [](Vector row){
         std::for_each(row.begin(), row.end(), [](double element) {
@@ -42,7 +42,7 @@ double sumMatrix (const Matrix &mat) {
  * @param mask Matrix # Mask that will be apply over the origin.
  * @return Matrix*
  */
-Matrix* applyMaskConvolution (Matrix* origin, const Matrix &mask) {
+Matrix* DeepCPP::IMGProcessing::applyMaskConvolution (Matrix* origin, const Matrix &mask) {
     static const size_t origin_dim[2] = dimension(*origin);
     static const size_t mask_dim[2] = dimension(mask);
 #ifndef __linux__
@@ -68,7 +68,7 @@ Matrix* applyMaskConvolution (Matrix* origin, const Matrix &mask) {
  * @param mask Matrix # Mask that will be apply over the origin.
  * @return Matrix
  */
-Matrix applyMaskAverager (Matrix* origin, const Matrix &mask) {
+Matrix DeepCPP::IMGProcessing::applyMaskAverager (Matrix* origin, const Matrix &mask) {
     static const size_t origin_dim[2] = dimension(*origin);
     static const size_t mask_dim[2] = dimension(mask);
 
@@ -87,7 +87,7 @@ Matrix applyMaskAverager (Matrix* origin, const Matrix &mask) {
                     m1[ii - retval_dim[0]*i][jj - retval_dim[1]*jj] = (*origin)[ii][jj];
                 }
             }
-            retval[i][j] = sumMatrix(dot(m1, mask));
+            retval[i][j] = DeepCPP::IMGProcessing::sumMatrix(dot(m1, mask));
         }
     }
     return retval;
