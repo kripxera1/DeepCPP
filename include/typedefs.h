@@ -14,4 +14,6 @@ using namespace std;
 typedef vector<vector<double>> Matrix;
 typedef vector<double> Vector;
 
+#define dimension(v) {(v).size(), (v)[0].size()}
+
 #endif // TYPEDEFS_H

@@ -1,0 +1,7 @@
+CompileFlags:
+  Add: 
+  - -I/home/tao/src/DeepCPP/include
+  - --unused-includes
+  Compiler: clang++
+  Diagnostics:
+    UnusedIncludes: None
